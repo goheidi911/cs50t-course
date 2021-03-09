@@ -1,0 +1,16 @@
+title: CS50T
+description: Initializing in Computer Science and Understanding Technology
+template:
+  repo: cs50t-template
+  name: cs50t
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
